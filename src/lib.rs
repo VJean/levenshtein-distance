@@ -70,6 +70,7 @@ mod tests {
             TestCase{input_a: String::from("sitting"), input_b: String::from("citing"), expected: 2},
             TestCase{input_a: String::from("uninformed"), input_b: String::from("uniformed"), expected: 1},
             TestCase{input_a: String::from("insertion"), input_b: String::from("deletion"), expected: 4},
+            TestCase{input_a: String::from("I am a dog"), input_b: String::from("I am a cat"), expected: 3},
         ];
         for case in test_cases {
             let result = compute_distance(&case.input_a, &case.input_b);
